@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="styles/styles_ratings.css" />
+    <link rel="stylesheet"  href="styles/styles_coyre.css">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>SPACEHUB</title>
+  </head>
+  <body>
+    <header class="header-navigation">
+      <div class="navigation-container">
+        <nav class="navigation">
+          <ul>
+            <li><a>Nosotros</a></li>
+            <li><a>Temas</a></li>
+            <li><a>Cursos</a></li>
+            <li>
+              <input type="text" class="search_bar" placeholder="Buscar" />
+            </li>
+            <!-- <li><img class="search-bar" src="images/search_bar.png" alt="Barra de búsqueda"></li> -->
+            <li><a  href="temas_est.html">Mi Aprendizaje</a></li>
+            <li><a href="sign_up.html">Perfil</a></li>
+            <li>
+              <a href="notificaciones.html"><img class="notification-icon" src="images/campana.png" alt="n" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="box-comments">
+        <!-- Comentarios -->
+
+      </div>
+      <div class="content-container-box">
+                
+        <div class="content">
+            <img src="images/fabricaEstelares.png">
+            
+        </div>
+        
+    </div>
+      <div class="container">
+        <div id="header-container">
+          <p>¿Como calificaria este curso?</p>
+          <p>Elegir Calificación</p>
+        </div>
+        <div class="star-widget">
+          <div class="stars">
+            <input type="radio" name="rate" id="rate-5" />
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4" />
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3" />
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2" />
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1" />
+            <label for="rate-1" class="fas fa-star"></label>
+          </div>
+          <form id="rating-form" action="#">
+            <header></header>
+            <div class="textarea">
+              <textarea
+                id="input-comment"
+                cols="30"
+                placeholder="Describe tu experiencia acerca de este curso"
+              >
+              </textarea>
+            </div>
+            <div class="btn">
+              <button type="submit" id="btn-comments">Publicar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id = "div-btn">
+        <button type="button" id="btn-publicar">Comentario</button>
+        <a href="comentarios y reseñas.html">
+          <button type="button" id="btn-publicar">Regresar</button>
+
+          
+        </a>
+        
+      </div>
+      <div class="virtual-assistant-container">
+        <a href="virtual_assistant.html">
+          <img id="virtual-assistant-icon" src="images/virtual_assistant.png" />
+        </a>
+      </div>
+    </main>
+
+    <script src="scripts/ratings.js"></script>
+  </body>
+</html>
