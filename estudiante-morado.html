@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_est_mor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>SPACEHUB</title>
+</head>
+<body>
+    <header class="header">
+        <div class = "navigation-container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="temas.html">Temas</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li>
+                        <input type="text" class="search_bar" placeholder="Buscar" />
+                      </li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="sign_up.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="signup-container" id="option-user-container">
+            <h2>Sign up</h2>
+            <p>¿Qué tipo de usuario eres?</p>
+            <div class="button-estudiante-container" id="button-estudiante-container">
+                <input type="button" class="boton-estudiante" value="Estudiante">
+            </div>  
+            <div class="button-profesor-container" id="button-profesor-container">
+                <input type="button" class="boton-profesor" value="Profesor">
+            </div>
+            <div class="button-container">
+                <input type="button" value="Continuar" onclick="showPersonalInformation()">
+            </div>
+        </div>
+        <div class="signup-container" id="personal-information-container" style="display:none;">
+            <h2>Sign up</h2>
+            <p>Correo</p>
+            <div class="text-input-container">
+                <input type="email">
+            </div>
+            <p>Número de celular</p>
+            <div class="number-input-container">
+                <input type="number" name="digit" min="0" max="9" maxlength="9" oninput="limitInputLength(this, 9)">
+            </div>
+            <p>Contraseña</p>
+            <div class="password-input-container">
+                <input type="password">
+            </div>
+            <div class="terms-condition-container">
+                <input type="checkbox">
+                <p>Acepto todos los términos</p>
+            </div>
+            <div class="register-button">
+                <input type="button" value="Registrarse" onclick="showFormCodigoVerificacion()">
+            </div>
+        </div>
+        <div class="signup-container" id="form-codigo-verificacion-container" style="display:none;">
+            <h2>Sign up</h2>
+            <p>Ingrese el código de verificación</p>
+            <div class="number-box">
+                <input type="number" name="digit" min="0" max="9" maxlength="1" oninput="limitInputLength(this, 1)">
+                <input type="number" name="digit" min="0" max="9" maxlength="1" oninput="limitInputLength(this, 1)">
+                <input type="number" name="digit" min="0" max="9" maxlength="1" oninput="limitInputLength(this, 1)">
+                <input type="number" name="digit" min="0" max="9" maxlength="1" oninput="limitInputLength(this, 1)">
+            </div>
+            <a>Reenviar código de verificación</a>
+            <div class="button-container">
+                
+                    <a href="temas_est.html">
+                    <input type="button" value="Continuar">
+                   </a>
+                
+            </div>
+        </div>
+        <div class="virtual-assistant-container">
+            <a href="virtual_assistant.html">
+                <img src="images/virtual_assistant.png">
+            </a>
+        </div>
+    </main>
+    <script src="scripts/sign-up.js"></script>
+</body>
+</html>
