@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles_calc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>SPACEHUB</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigation-container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="temas.html">Temas</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li>
+                        <input type="text" class="search_bar" placeholder="Buscar" />
+                    </li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                    <li><img class="notification-icon" src="images/campana.png" alt="n" /></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1>Calculadora astronómica</h1>
+        </div>
+        <div class="calculator-container">
+            <aside class="sidebar">
+                <h2>Módulos de la calculadora</h2>
+                <ul>
+                    <li class="principal"><a href="#">Cálculos de tiempo</a></li>
+                    <li class="secundario"><a href="#">Día Juliano</a></li>
+                    <li class="secundario"><a href="#">Tiempo sidéreo</a></li>
+                    <li class="secundario"><a href="#">Almanaque</a></li>
+                    <li class="secundario"><a href="#">Equinoccios</a></li>
+                    <li class="principal"><a href="#">Conversor de coordenadas</a></li>
+                    <li class="principal"><a href="#">Sistema solar</a></li>
+                </ul>
+            </aside>
+
+            <section class="main-content">
+                <div class="mode-selector">
+                    <button class="interactive-mode">Modo Interactivo</button>
+                    <button class="deferred-mode active">Modo diferido</button>
+                </div>
+                <div class="date-time">
+                    <label for="datetime">Fecha y hora</label>
+                    <input type="text" id="datetime" value="03/01/10 14:08">
+                    <button class="now-btn">ahora</button>
+                </div>
+                <div class="julian-day">
+                    <label for="julian-day">Día Juliano</label>
+                    <input type="text" id="julian-day" value="2455200,08914" readonly>
+                </div>
+                <div class="modified-julian-day">
+                    <label for="modified-julian-day">Día Juliano modificado</label>
+                    <input type="text" id="modified-julian-day" value="55199,58914" readonly>
+                </div>
+            </section>
+        </div>
+        <div class="virtual-assistant-container">
+            <a href="virtual_assistant.html">
+                <img id="virtual-assistant-icon" src="images/virtual_assistant.png" />
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>
