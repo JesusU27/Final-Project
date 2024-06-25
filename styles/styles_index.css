@@ -1,0 +1,163 @@
+body {
+  background-image: url("../images/background_page6.png");
+  background-repeat: no-repeat;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: #fa20f2; /* Cambia este color según tus necesidades */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.navigation-container {
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex; /* Habilita el uso de flexbox */
+  justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /*asegura que el header esta por encima del contenido*/
+}
+
+.virtual-assistant-container {
+  position: fixed;
+    bottom: 5%; /* Coloca la imagen al fondo */
+    left: 5%; /* Coloca imagen a la izquierda */
+}
+
+
+#virtual-assistant-icon {
+  width: 143px;
+  height: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+#virtual-assistant-icon:hover {
+  transform: scale(80%);
+}
+
+::placeholder {
+  color: grey;
+  font-family: "Inter";
+}
+
+.search_bar {
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid #fa20f2;
+}
+
+#hero {
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido del héroe hacia arriba */
+  padding: 8rem 2rem 4rem 2rem; /* Ajusta el relleno para subir más el contenido */
+  min-height: calc(100vh - 7rem); /* Resta el alto de la barra de navegación */
+}
+
+.hero_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%; /* Permite que el contenedor ocupe todo el ancho disponible */
+  max-width: 1200px;
+  margin: 100px 0 0 50px; /* Ajusta estos valores según sea necesario */
+  justify-content: flex-start; /* Alinea el contenedor hacia la izquierda */
+}
+
+.hero_content {
+  max-width: 100%; /* Permite que el contenido ocupe todo el ancho del contenedor */
+}
+
+.hero-title {
+  color: #687690;
+  font-size: 3rem; /* Ajusta el tamaño de la fuente del título */
+  margin-bottom: 1rem;
+}
+
+.hero-heading {
+  font-size: 6rem;
+  line-height: 6.5rem; /* Ajusta la altura de línea para un mejor espaciado */
+  margin-bottom: 1rem;
+  max-width: 100%; /* Permite que el encabezado ocupe todo el ancho del contenedor */
+  margin-left: 0; /* Elimina margen a la izquierda */
+  margin-right: 0; /* Elimina margen a la derecha */
+  font-weight: 800;
+  color: #efc7f1;
+  font-family: "Inter";
+}
+
+.paragraph {
+  line-height: 2.5rem; /* Ajusta la altura de línea para un mejor espaciado */
+  margin-bottom: 2rem;
+  max-width: 100%; /* Permite que el párrafo ocupe todo el ancho del contenedor */
+  margin-left: 0; /* Elimina margen a la izquierda */
+  margin-right: 0; /* Elimina margen a la derecha */
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+.astronexus {
+  margin-top: -90px;
+  margin-left: 10px;
+  width: 250px; /* Establece el ancho deseado para el contenedor */
+  height: 250px; /* Establece la altura deseada para el contenedor */
+  border-radius: 50%; /* Hace que el contenedor tenga bordes circulares */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del contenedor circular */
+}
+
+.astronexus img {
+  width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor circular */
+  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen para que quepa en el círculo */
+  margin-top: -10px; /* Mueve la imagen hacia arriba dentro del contenedor */
+}
+
+b {
+  color: #efc7f1;
+}
+.notification-icon {
+  width: 30px;
+  height:30px;
+}

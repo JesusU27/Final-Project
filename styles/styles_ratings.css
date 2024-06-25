@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("../images/background_page6.png");
+  background-repeat: no-repeat;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding-left: 38px;
+  padding-right: 38px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: #fa20f2; /* Cambia este color según tus necesidades */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.navigation-container {
+  margin: auto;
+}
+
+
+.header-navigation {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start; 
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+}
+
+
+.search_bar {
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid #fa20f2;
+}
+
+.virtual-assistant-container {
+  position: fixed;
+    bottom: 5%; /* Coloca la imagen al fondo */
+    left: 5%; /* Coloca imagen a la izquierda */
+}
+
+
+#virtual-assistant-icon {
+  width: 143px;
+  height: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+#virtual-assistant-icon:hover {
+  transform: scale(80%);
+}
+.notification-icon {
+  width: 30px;
+  height:30px;
+}
+
+/*==========================================*/
+.container {
+  position: fixed;
+  width: 400px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+  display: none;
+  top: 25%;
+  right: 36%;
+}
+.container .post {
+  display: none;
+}
+.container .text {
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container .edit {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover {
+  text-decoration: underline;
+}
+.container .star-widget input {
+  display: none;
+}
+
+#header-container {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  align-items: center;
+}
+
+#header-container p {
+  justify-content: center;
+  margin-left: 50px;
+}
+#header-container p ~ p {
+  margin-left: 110px;
+}
+
+.star-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  width: 365px;
+  height: 60px;
+}
+
+.star-widget label {
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: rgb(217, 108, 247);
+}
+input:checked ~ label {
+  color: rgb(134, 0, 171);
+}
+input#rate-5:checked ~ label {
+  color: rgb(226, 122, 255);
+  text-shadow: 0 0 20px rgb(33, 11, 37);
+}
+
+input:checked ~ form {
+  display: block;
+}
+form header {
+  width: 100%;
+  font-size: 25px;
+  color: rgb(105, 2, 98);
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus {
+  border-color: #444;
+}
+
+.textarea textarea::placeholder {
+  color: white;
+}
+form .btn {
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover {
+  background: #1b1b1b;
+}
+
+#div-btn {
+  position: fixed;
+  bottom: 10px; /* Ajusta según el espacio que desees entre el borde inferior y el elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}

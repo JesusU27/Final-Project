@@ -1,0 +1,228 @@
+body {
+  background-image: url("../images/background_page6.png");
+  background-repeat: no-repeat;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: #fa20f2; /* Cambia este color según tus necesidades */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.navigation-container {
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex; /* Habilita el uso de flexbox */
+  justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /*asegura que el header esta por encima del contenido*/
+}
+
+.virtual-assistant-container {
+  position: fixed;
+  bottom: 5%; /* Coloca la imagen al fondo */
+  left: 5%; /* Coloca imagen a la izquierda */
+}
+
+#virtual-assistant-icon {
+  width: 143px;
+  height: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+#virtual-assistant-icon:hover {
+  transform: scale(80%);
+}
+
+::placeholder {
+  color: grey;
+  font-family: "Inter";
+}
+
+.search_bar {
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid #fa20f2;
+}
+
+.notification-icon {
+  width: 30px;
+  height:30px;
+}
+
+.ForoPage {
+    margin: 0; 
+    padding: 0; 
+    background-image: url("images/backgroundForo.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+#lbl-foro, #lbl-foro-ct {
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: "Inter";
+    margin-bottom: 40px; /* Espacio adicional debajo del título */
+    padding-left: 95px; /* Añadir margen izquierdo para alinear con el contenido */
+}
+
+.forum-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 85%; /* Ajuste de ancho para mejor visualización y alineación */
+    margin-left: 75px; /* Ajustar margen izquierdo para mover a la izquierda */
+    padding: 20px; /* Espacio interno */
+}
+
+.forum-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave al pasar el cursor */
+}
+
+.forum-card:hover {
+    transform: translateY(-10px); /* Desplaza la tarjeta hacia arriba al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.forum-icon {
+    background-color: #1e3d7d;
+    color: white;
+    padding: 20px;
+    border-radius: 50%; /* Ícono circular */
+    text-align: center;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Inter";
+}
+
+.forum-info {
+    flex: 1;
+}
+
+.forum-info h2 {
+    margin: 0;
+    color: #ff00ff;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: "Inter";
+}
+
+.forum-info a {
+    text-decoration: none;
+
+}
+
+.forum-info p {
+    color: #FFFFFF;
+    font-size: 20px; /* Ajuste de tamaño de fuente para mejor legibilidad */
+    font-weight: bolder;
+    font-family: "Inter";
+    margin: 5px 0 0;
+}
+
+.forum-stats {
+    text-align: right;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.forum-stats span {
+    display: block;
+}
+
+
+/* FORO_2*/
+
+.publicacion {
+    font-size: 24px;
+    font-family: "Inter";
+    font-weight: bolder;
+    color:#FFFFFF;
+    background-color: #AC71DB;
+    margin-left: 25%;
+    max-width: 45%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.publicacion p {
+    background-color: rgb(255, 0, 255, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.publicacion textarea {
+    background-color: rgba(255, 255, 255, 0.6); /* Cambia el último valor para ajustar la opacidad */
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Inter";
+}
+
+.KitForo {
+    height:480px;
+    border-radius: 20px;
+}

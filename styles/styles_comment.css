@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.notification-icon {
+  width: 30px;
+  height:30px;
+}
+/* PENDIENTE --> HACER EL SISTEMA DE CALIF*/
+
+.container-main {
+  max-width: 900px;
+  margin: auto;
+
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  color: beige;
+}
+.header-calification {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.first-part {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.second-part {
+  margin-top: 7%;
+  width: 1200px;
+  font-size: 18px;
+  margin-left: 10%;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.stars {
+  margin-left: 10px;
+  color: gold;
+  font-size: 25px;
+}
+.rating-number {
+  font-size: 100px;
+  font-weight: 600;
+  font-style: italic;
+}
+.rating-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.stars-small {
+  color: gold;
+  margin-right: 10px;
+}
+.progress-container {
+  width: 60%;
+  height: 10px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.progress {
+  height: 100%;
+}
+.progress-5 {
+  width: 69%;
+  background-color: purple;
+}
+.progress-4 {
+  width: 21%;
+  background-color: purple;
+}
+.progress-3 {
+  width: 6%;
+  background-color: purple;
+}
+.progress-2 {
+  width: 2%;
+  background-color: purple;
+}
+.progress-1 {
+  width: 2%;
+  background-color: purple;
+}
+.percentage {
+  font-size: 0.8em;
+  width: 30px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 1000px;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-icon {
+  font-size: 2em;
+  margin-right: 10px;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  font-weight: bold;
+  color: #ff00ff;
+}
+.user-comment {
+  color: white;
+}
+.user-rating {
+  color: white;
+  font-size: 0.9em;
+}
+
+.container {
+  position: fixed;
+  width: 400px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+  display: none;
+  top: 25%;
+  right: 36%;
+}
+.container .post {
+  display: none;
+}
+.container .text {
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container .edit {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover {
+  text-decoration: underline;
+}
+.container .star-widget input {
+  display: none;
+}
+
+#header-container {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  align-items: center;
+}
+
+#header-container p {
+  justify-content: center;
+  margin-left: 50px;
+}
+#header-container p ~ p {
+  margin-left: 110px;
+}
+
+.star-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  width: 365px;
+  height: 60px;
+}
+
+.star-widget label {
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: rgb(217, 108, 247);
+}
+input:checked ~ label {
+  color: rgb(134, 0, 171);
+}
+input#rate-5:checked ~ label {
+  color: rgb(226, 122, 255);
+  text-shadow: 0 0 20px rgb(33, 11, 37);
+}
+
+input:checked ~ form {
+  display: block;
+}
+form header {
+  width: 100%;
+  font-size: 25px;
+  color: rgb(105, 2, 98);
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus {
+  border-color: #444;
+}
+
+.textarea textarea::placeholder {
+  color: white;
+}
+form .btn {
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover {
+  background: #1b1b1b;
+}
+
+#div-btn {
+  margin-top: 300px;
+}
+
+#btn-publicar {
+  width: 200px;
+  height: 50px;
+  background-color: #fa20f2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-family: "inter";
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra verticalmente el texto */
+  align-items: center; /* Centra horizontalmente el texto */
+}

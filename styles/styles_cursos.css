@@ -1,0 +1,335 @@
+body {
+  background-image: url("../images/background_page6.png");
+  background-repeat: no-repeat;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: #fa20f2; /* Cambia este color según tus necesidades */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.navigation-container {
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex; /* Habilita el uso de flexbox */
+  justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /*asegura que el header esta por encima del contenido*/
+}
+
+.virtual-assistant-container {
+  position: fixed;
+    bottom: 5%; /* Coloca la imagen al fondo */
+    left: 5%; /* Coloca imagen a la izquierda */
+}
+
+
+#virtual-assistant-icon {
+  width: 143px;
+  height: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+#virtual-assistant-icon:hover {
+  transform: scale(80%);
+}
+
+::placeholder {
+  color: grey;
+  font-family: "Inter";
+}
+
+.search_bar {
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid #fa20f2;
+}
+
+
+
+/* Estilo para el contenedor de los cursos */
+.courses-container h1 {
+    color: #FFFFFF;
+    margin-left: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Inter";
+}
+
+/* Contenedor para las tarjetas de cursos */
+.courses-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 90px;
+}
+
+/* Estilo para las tarjetas de los cursos */
+.card-curso {
+    background: rgba(217, 217, 217, 0.52);
+    width: 380px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid #EFC7F1;
+    margin: 20px;
+    text-align: center;
+}
+
+.card-curso img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.course-details h3, .course-details p {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter";
+    text-align: left ;
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+
+.course-details h3 {
+    color: #EFC7F1;
+    
+}
+
+
+.card-curso:hover {
+    transform: translateY(-10px); /* Desplaza la tarjeta hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añade una sombra para mayor efecto */
+}
+
+
+
+/* CURSOS PROFESOR*/
+
+.weeks-banner {
+  height: 80%;
+  width:20%;
+  margin-left: 30px;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 30px;
+  font-family: "Inter";
+  display: flex;
+  background-color: white;
+  flex-direction: column; /* Asegura que los spans estén en columna */
+  justify-content: center;
+   
+}
+
+.weeks-banner span {
+
+  width: 100%;
+  
+  background-color:#EFC7F1;
+  padding: 10px 0px 10px 0px;
+  margin-top: 1px; /* Espacio arriba */
+  margin-bottom: 2px; /* Espacio abajo */
+  border-bottom:3px solid #000;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  filter: opacity(50%);
+}
+
+.weeks-banner span:hover {
+  filter: opacity(100%); /* Al pasar el mouse, se regresa al 100% de luminosidad */
+}
+
+.weeks-banner a {
+  color: #000;
+  text-align: center;
+}
+.content-container{
+  display: flex;
+}
+.content-container-box{
+ 
+ height: 70%;
+ width: 60%;
+ margin-left: 120px;
+ 
+}
+
+.Astronomy-tittle img{
+  width: 100%;
+  height: 100px;
+}
+
+
+h2{
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.content img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.notification-icon {
+  width: 30px;
+  height:30px;
+}
+
+button {
+
+  width: 320px;
+  background-color: #FA20F2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-family: "inter";
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra verticalmente el texto */
+  align-items: center; /* Centra horizontalmente el texto */
+  
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #E500E8;
+}
+
+.edit-button {
+  background-color: #AC71DB;
+  margin-left: 120px;
+}
+
+.video-button {
+  background-color: #AC71DB;
+  margin-right: 120px;
+}
+.content-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 1000px;
+}
+
+.content-2 {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.img-semana1{
+  width: 100%; /* Ajusta el tamaño de la imagen */
+
+  border-radius: 20px;
+  border: 5px solid #FA20F2;
+}
+.h2-semana1{
+  font-size: 30px;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-family: "Inter";
+  text-align: left;
+}
+.content-container-box-2{
+  position: absolute;
+ left: 400px;
+ padding-top: 10px;
+}
+.button-video-container {
+  padding-top: 15px;
+  position: absolute;
+  left: 520px;
+}
+
+/* Contenedor para el botón "Contenido" */
+.content-button-container {
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  margin-top: 10px; /* Espacio entre la tarjeta y el botón */
+}
+
+/* Estilo para el botón "Contenido" */
+.content-button {
+  width: 320px;
+  background-color: #AC71DB; /* Color morado */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  transition: background-color 0.3s;
+}
+
+.content-button:hover {
+  background-color: #9B50B3; /* Cambia el color al pasar el mouse */
+}
+
+

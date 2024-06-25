@@ -1,0 +1,145 @@
+body {
+  background-image: url("../images/background_page6.png");
+  background-repeat: no-repeat;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: #fa20f2; /* Cambia este color según tus necesidades */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.navigation-container {
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex; /* Habilita el uso de flexbox */
+  justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /*asegura que el header esta por encima del contenido*/
+}
+
+.virtual-assistant-container {
+  position: fixed;
+    bottom: 5%; /* Coloca la imagen al fondo */
+    left: 5%; /* Coloca imagen a la izquierda */
+}
+
+
+#virtual-assistant-icon {
+  width: 143px;
+  height: 130px;
+  transition: all 0.5s ease-in-out;
+}
+
+#virtual-assistant-icon:hover {
+  transform: scale(80%);
+}
+
+::placeholder {
+  color: grey;
+  font-family: "Inter";
+}
+
+.search_bar {
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid #fa20f2;
+}
+
+.notification-icon {
+  width: 30px;
+  height:30px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.acerca {
+  max-width: 50%;
+  margin-left: 100px;
+  margin-right: 20px;
+  font-size: 65px;
+  font-weight: 800;
+  font-family: "Inter";
+  color: #ffffff;
+}
+
+.acerca span {
+  font-style: italic;
+  color: #efc7f1;
+}
+
+.imagen-contenedor {
+  max-width: 50%;
+  overflow: hidden;
+  border-radius: 39px;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 50px; /* Ajusta este valor según sea necesario */
+
+}
+
+.astronauta {
+  width: 503px;
+  height: auto;
+  display: block;
+}
+
+.association {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 600px;
+  margin-left: 115px;
+  margin-right: auto;
+  background-color: rgba(247, 239, 239, 0.3);
+  border-radius: 30px;
+}
+
+.association .logo {
+  margin: 5px;
+}

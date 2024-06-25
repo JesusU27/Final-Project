@@ -1,0 +1,306 @@
+body {
+    background-image: url("../images/background_page6.png");
+    background-repeat: no-repeat;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Inter";
+  }
+  
+  .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navigation ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #fa20f2; /* Cambia este color según tus necesidades */
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .navigation ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  
+  .navigation-container {
+    margin: auto;
+  }
+  
+  .header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex; /* Habilita el uso de flexbox */
+    justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+    width: 100%;
+    padding: 10px;
+    z-index: 1000; /*asegura que el header esta por encima del contenido*/
+  }
+  
+  .virtual-assistant-container {
+    position: fixed;
+      bottom: 5%; /* Coloca la imagen al fondo */
+      left: 5%; /* Coloca imagen a la izquierda */
+  }
+  
+  
+  #virtual-assistant-icon {
+    width: 143px;
+    height: 130px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #virtual-assistant-icon:hover {
+    transform: scale(80%);
+  }
+  
+  ::placeholder {
+    color: grey;
+    font-family: "Inter";
+  }
+  
+  .search_bar {
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 280px;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 2px solid #fa20f2;
+  }
+
+  .notification-icon {
+    width: 30px;
+    height:30px;
+  }
+  
+  .signup-container {
+    width: 623px;
+    font-family: 'inter';
+    height: 730px;
+    color: #FFFFFF;
+    background: rgb(217, 217, 217, 0.18);
+    margin-left: 157px;
+    margin-top: 100px;
+    border-radius: 82px 82px 82px 82px;
+}
+
+.signup-container h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.signup-container p {
+    font-weight: 800;
+    font-family: "Inter";
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+.signup-container a {
+    font-weight: 800;
+    font-family: "Inter";
+    padding-left: 40px;
+    font-size: 30px;
+    color: #FA20F2;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.number-box {
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.number-box input {
+    border-radius: 20px 20px 20px 20px;
+    width: 99px;
+    height: 97px;
+    background: rgb(217, 217, 217, 0.45);
+    margin-right: 20px;
+    border: none;
+    font-size: 60px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button-container {
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.button-container input {
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 50px;
+    color: #AC71DB;
+}
+
+.button-estudiante-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button-estudiante-container.clicked input{
+    background: #FA20F2;
+}
+
+.button-estudiante-container input{
+    background: #EFC7F1;
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 50px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.button-profesor-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button-profesor-container.clicked input{
+    background: #FA20F2;
+}
+
+.button-profesor-container input{
+    background: #EFC7F1;
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 50px;
+    color: #FFFFFF;
+    border: none;
+}
+
+#personal-information-container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#personal-information-container h2 {
+    margin-bottom: 10px;
+}
+
+.text-input-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-input-container input {
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 30px;
+    border: none;
+    background: rgb(217, 217, 217, 0.45);
+    padding-left: 20px;
+}
+
+.number-input-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.number-input-container input {
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 30px;
+    border: none;
+    background: rgb(217, 217, 217, 0.45);
+    padding-left: 20px;
+}
+
+.password-input-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.password-input-container input {
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 30px;
+    border: none;
+    background: rgb(217, 217, 217, 0.45);
+    padding-left: 20px;
+}
+
+.terms-condition-container {
+    display: inline-flex;
+    padding-left: 40px;
+}
+
+.terms-condition-container input {
+    margin-right: 10px;
+    padding-right: 5px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.terms-condition-container p {
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-button input {
+    width: 543px;
+    height: 80px;
+    border-radius: 167px 167px 167px 167px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 50px;
+    color: #AC71DB;
+}

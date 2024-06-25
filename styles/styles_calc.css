@@ -1,0 +1,206 @@
+body {
+    background-image: url("../images/background_page6.png");
+    background-repeat: no-repeat;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Inter";
+  }
+  
+  .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navigation ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #fa20f2; /* Cambia este color según tus necesidades */
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .navigation ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  
+  .navigation-container {
+    margin: auto;
+  }
+  
+  .header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex; /* Habilita el uso de flexbox */
+    justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+    width: 100%;
+    padding: 10px;
+    z-index: 1000; /*asegura que el header esta por encima del contenido*/
+  }
+  
+  .virtual-assistant-container {
+    position: fixed;
+      bottom: 5%; /* Coloca la imagen al fondo */
+      left: 5%; /* Coloca imagen a la izquierda */
+  }
+  
+  
+  #virtual-assistant-icon {
+    width: 143px;
+    height: 130px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #virtual-assistant-icon:hover {
+    transform: scale(80%);
+  }
+  
+  ::placeholder {
+    color: grey;
+    font-family: "Inter";
+  }
+  
+  .search_bar {
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 280px;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 2px solid #fa20f2;
+  }
+  
+  
+  .notification-icon {
+    width: 30px;
+    height:30px;
+  }
+
+.calculator-container {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Inter";
+}
+
+.sidebar {
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Inter";
+    text-align: center;
+}
+
+.principal {
+    background-color: #EFC7F1;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Inter";
+    color: #FFFFFF;
+}
+
+.secundario {
+    background-color: #EFC7F18a;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Inter";
+    color: #FFFFFF;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mode-selector button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mode-selector .interactive-mode {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.mode-selector .deferred-mode {
+    background-color: #d890d8;
+    color: white;
+}
+
+.mode-selector .deferred-mode.active {
+    background-color: #b060b0;
+}
+
+.date-time,
+.julian-day,
+.modified-julian-day {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button.now-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d890d8;
+    color: white;
+}

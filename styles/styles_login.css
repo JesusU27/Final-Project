@@ -1,0 +1,190 @@
+body {
+    background-image: url("../images/background_page6.png");
+    background-repeat: no-repeat;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Inter";
+  }
+  
+  .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navigation ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #fa20f2; /* Cambia este color según tus necesidades */
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .navigation ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  
+  .navigation-container {
+    margin: auto;
+  }
+  
+  .header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex; /* Habilita el uso de flexbox */
+    justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+    width: 100%;
+    padding: 10px;
+    z-index: 1000; /*asegura que el header esta por encima del contenido*/
+  }
+  
+  .virtual-assistant-container {
+    position: fixed;
+      bottom: 5%; /* Coloca la imagen al fondo */
+      left: 5%; /* Coloca imagen a la izquierda */
+  }
+  
+  
+  #virtual-assistant-icon {
+    width: 143px;
+    height: 130px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #virtual-assistant-icon:hover {
+    transform: scale(80%);
+  }
+  
+  ::placeholder {
+    color: grey;
+    font-family: "Inter";
+  }
+  
+  .search_bar {
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 280px;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 2px solid #fa20f2;
+  }
+
+  .notification-icon {
+    width: 30px;
+    height:30px;
+  }
+  
+
+
+  /* Login Styles */
+.login-container {
+    width: 623px;
+    height: 730px;
+    color: #FFFFFF;
+    background: rgba(217, 217, 217, 0.18);
+    margin: 100px 0 50px 250px;
+    border-radius: 82px;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Inter";
+    font-weight: 800;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 40px;
+    font-family: "Inter";
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.45);
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-container a {
+    color: #FA20F2;
+    text-decoration: underline;
+    margin: 10px;
+    font-size: 30px;
+    font-family: "Inter";
+}
+
+.remember-me {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    transform: scale(1.5); /* Escala el checkbox a 1.5 veces su tamaño original */
+
+    margin-right: 0.5rem; /* Espacio entre el checkbox y la etiqueta */
+}
+.remember-me input[type="checkbox"] {
+    transform: scale(1.5); /* Escala el checkbox a 1.5 veces su tamaño original */
+    margin-right: 0.5rem; /* Espacio entre el checkbox y la etiqueta */
+}
+
+
+
+
+.login-container input[type="submit"] {
+    width: calc(100% - 80px);
+    height: 70px;
+    border-radius: 167px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFFFFF;
+    background: #FA20F2;
+    border: none;
+    margin: 20px 40px;
+    cursor: pointer;
+    font-family: "Inter"
+}
+
+.login-container p {
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+.login-container p a {
+    color: #FA20F2;
+    text-decoration: underline;
+    font-family: "Inter";
+}

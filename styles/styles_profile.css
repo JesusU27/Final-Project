@@ -1,0 +1,189 @@
+body {
+  background-image: url("../images/background_page6.png");
+  background-repeat: no-repeat;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+  height: 2px; /* Ajusta el grosor de la línea */
+  background-color: #fa20f2; /* Cambia este color según tus necesidades */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.navigation-container {
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex; /* Habilita el uso de flexbox */
+  justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /*asegura que el header esta por encima del contenido*/
+}
+
+.virtual-assistant-container {
+  position: fixed;
+    bottom: 5%; /* Coloca la imagen al fondo */
+    left: 5%; /* Coloca imagen a la izquierda */
+}
+
+
+
+#virtual-assistant-icon {
+  width: 143px;
+  height: 130px;
+  transition: all .5s ease-in-out;
+}
+
+
+#virtual-assistant-icon:hover{
+  transform:scale(80%);
+  
+}
+
+
+
+::placeholder {
+  color: grey;
+  font-family: "Inter";
+}
+
+.search_bar {
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 280px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid #fa20f2;
+}
+
+.notification-icon {
+  width: 30px;
+  height:30px;
+}
+
+/*==========================================*/
+
+.profile {
+  background-color: whitesmoke;
+  border-radius: 50px;
+  padding: 20px;
+  width: 1000px;
+  height: 570px;
+  margin-left: 250px;
+  margin-top: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile_shadow {
+  background-color: lightgray;
+  border-radius: 50px;
+  padding: 20px;
+  width: 950px;
+  height: 150px;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile_info {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.info_user_label {
+  border-bottom: 1px solid transparent; /* borde inferior transparente */
+  border-image: linear-gradient(to right, #000000 25%, transparent 40%) 1; /* gradient que cambia de gris claro a transparente a la mitad */
+}
+
+.info-list {
+  margin-top: 40px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-list li {
+  margin-bottom: 20px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #a4089f;
+}
+
+.name-and-usertype {
+  margin-top: 90px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.name-and-usertype li {
+  margin-bottom: 15px;
+  margin-left: 200px;
+
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+
+.user-type {
+  color: #a4089f;
+  font-size: 17px;
+}
+
+.info_user_label {
+  color: #a4089f;
+}
+
+.icon {
+  box-sizing: border-box;
+  position: absolute;
+  width: 133px;
+  height: 138px;
+  left: 330px;
+  top: 210px;
+  border-radius: 800%;
+
+  
+  border: 2px solid #000000;
+
+  background-image: url("../images/profile_icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -2px;
+}

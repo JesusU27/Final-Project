@@ -1,0 +1,129 @@
+body {
+    background-image: url("../images/background_page6.png");
+    background-repeat: no-repeat;
+  }
+  
+  .navigation ul li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Inter";
+  }
+  
+  .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navigation ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Ajusta según el espacio deseado entre el texto y la línea */
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #fa20f2; /* Cambia este color según tus necesidades */
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .navigation ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  
+  .navigation-container {
+    margin: auto;
+  }
+  
+  .header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex; /* Habilita el uso de flexbox */
+    justify-content: flex-start; /* Distribuye los hijos con espacio entre ellos */
+    width: 100%;
+    padding: 10px;
+    z-index: 1000; /*asegura que el header esta por encima del contenido*/
+  }
+  
+  .virtual-assistant-container {
+    position: fixed;
+    bottom: 5%; /* Coloca la imagen al fondo */
+    left: 5%; /* Coloca imagen a la izquierda */
+  }
+  
+  #virtual-assistant-icon {
+    width: 143px;
+    height: 130px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #virtual-assistant-icon:hover {
+    transform: scale(80%);
+  }
+  
+  ::placeholder {
+    color: grey;
+    font-family: "Inter";
+  }
+  
+  .notification-icon {
+    width: 30px;
+    height:30px;
+  }
+  
+  .search_bar {
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 280px;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 2px solid #fa20f2;
+  }
+
+  .chat-virtual-assistant-container {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 822px;
+    background: rgb(255, 255, 255, 0.55);
+    border-radius: 30px 30px 30px 30px;
+    margin: 60px auto 60px auto;
+}
+
+.message {
+    width: 461px;
+    padding: 39px 44px;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    word-wrap: break-word;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra a la izquierda y abajo */
+}
+
+.left {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+    background: #EFC7F1;
+    margin-left: 26px;
+}
+
+.right {
+    background-color: #e0f0f0;
+    align-self: flex-end;
+    background: #D9D9D9;
+    border: 2px solid #EFC7F1;
+    margin-right: 26px;
+}
