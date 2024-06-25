@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles_profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <title>SPACEHUB</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation-container">
+        <nav class="navigation">
+          <ul>
+            <li><a href="IsLogged_html/nosotros.html">Nosotros</a></li>
+            <li><a href="IsLogged_html/temas.html">Temas</a></li>
+            <li><a href="IsLogged_html/cursos.html">Cursos</a></li>
+            <li>
+              <input type="text" class="search_bar" placeholder="Buscar" />
+            </li>
+            <li><a href="#" id="Apr-Cur">XXXXXXX</a></li>
+            <li><a href="profiles.html">Perfil</a></li>
+            <li>
+              <a href="notificaciones.html"><img class="notification-icon" src="images/campana.png" alt="n" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="profile">
+          <div class="profile_shadow">
+            <ul class="name-and-usertype">
+              <li>
+                <span id="ut1" class="user-type">Estudiante:</span>
+              </li>
+              <li>
+                <span id = "name-lastname" class="user-type-value">XXXXXXX XXXXXXX</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class = "icon">
+            
+          </div>
+          <div class="profile_info">
+            <h3 class="info_user_label">Información del usuario</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Nombres:</span>
+                <span id = "name" class="info-value">XXXXXXXX XXXXXXX</span>
+              </li>
+              <li>
+                <span class="info-label">Apellidos:</span>
+                <span id = "last-name" class="info-value">XXXXXXXX XXXXXXX</span>
+              </li>
+              <li>
+                <span class="info-label">Correo electrónico:</span>
+                <span id = "email" class="info-value">xxxxx@gmail.com</span>
+              </li>
+              <li>
+                <span class="info-label">Número de celular:</span>
+                <span id="number" class="info-value">XXXXXXXX</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="virtual-assistant-container">
+        <a href="virtual_assistant.html">
+          <img id= "virtual-assistant-icon" src="images/virtual_assistant.png" />
+        </a>
+      </div>
+    </main>
+  <script src="scripts/users.js"></script>
+  </body>
+</html>

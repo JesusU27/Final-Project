@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles_tour_virtual.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>SPACEHUB</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigation-container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="temas.html">Temas</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li>
+                        <input type="text" class="search_bar" placeholder="Buscar" />
+                    </li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                    <li><img class="notification-icon" src="images/campana.png" alt="n" /></li>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="virtual-tour-presentation-container" id="virtual-tour-presentation-container">
+            <h3>
+                Tour Virtual por la Estación Espacial Internacional (ISS)
+            </h3>
+            <div class="virtual-tour-content-container">
+                <div class="text-content-container">
+                    <p>
+                        Explora la Estación Espacial Internacional (ISS) desde la comodidad de tu hogar con nuestro tour
+                        virtual. Sumérgete en cada módulo de la ISS, desde los laboratorios de investigación donde se
+                        realizan experimentos científicos de vanguardia hasta los camarotes donde los astronautas
+                        descansan durante sus misiones en el espacio. Descubre los secretos de la vida en gravedad cero
+                        mientras te desplazas por los pasillos y aprende sobre las actividades diarias de los
+                        astronautas a bordo de esta maravilla tecnológica que orbita la Tierra.
+                    </p>
+                    <img src="images/satelite.png">
+                </div>
+            </div>
+            <div class="buttons-manual-empezar-container">
+                <input type="button" value="Manual" onclick="showManualContent()">
+                <input type="button" value="Empezar" onclick="showEmpezarContent()">
+            </div>
+        </div>
+        <div class="manual-container" id="manual-container" style="display:none;">
+            <h3>
+                Descubre el Espacio en Realidad Virtual
+            </h3>
+            <div class="manual-content-container">
+                <p>
+                    ¡Bienvenido a nuestra plataforma espacial! Sumérgete en el cosmos y explora la Estación Espacial
+                    Internacional como nunca antes con nuestra experiencia de realidad virtual. Aquí tienes algunas
+                    instrucciones simples para comenzar:
+                </p>
+                <ol>
+                    <li>Preparación: Antes de comenzar, asegúrate de tener tus lentes de realidad virtual listos y
+                        correctamente configurados.</li>
+                    <li>Acceso a la Experiencia: Ingresa a nuestra plataforma y dirígete a la sección de realidad
+                        virtual o selecciona el tour virtual por la Estación Espacial Internacional.</li>
+                    <li>Inicia el Tour: Haz clic en el botón "Empezar" para comenzar tu aventura espacial en realidad
+                        virtual.</li>
+                    <li>Exploración: Utiliza los controles de tu dispositivo VR para moverte dentro de la experiencia.
+                        Explora cada rincón de la ISS a tu propio ritmo y maravíllate con las vistas del espacio.</li>
+                    <li>Disfruta: Sumérgete en el mundo de la realidad virtual y disfruta de la increíble experiencia de
+                        estar en el espacio. Tómate tu tiempo para absorber cada detalle y aprender sobre la vida en
+                        gravedad cero.</li>
+                </ol>
+                <p>
+                    ¡Y eso es todo! ¡Es hora de comenzar tu viaje por el cosmos con nuestra experiencia de realidad
+                    virtual!
+                </p>
+                <div class="button-close-container">
+                    <input type="button" value="Regresar" onclick="showTourVirtualTema('manual-container')">
+                </div>
+            </div>
+        </div>
+        <div class="empezar-content-container" id="empezar-content-container" style="display:none;">
+            <h3>
+                Tour Virtual por la Estación Espacial Internacional (ISS)
+            </h3>
+            <img src="images/virtual_tour_image2.jpg">
+            <div class="button-close-container">
+                <input type="button" value="Cerrar simulación"
+                    onclick="showTourVirtualTema('empezar-content-container')">
+            </div>
+        </div>
+        <div class="virtual-assistant-container">
+            <a href="virtual_assistant.html">
+                <img id="virtual-assistant-icon" src="images/virtual_assistant.png" />
+            </a>
+        </div>
+    </main>
+    <script src="scripts/tour_virtual.js"></script>
+
+</body>
+
+</html>
